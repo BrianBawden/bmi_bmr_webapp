@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>For men: BMR = 66.47 + (6.24 × weight in pounds) + (12.7 × height in inches) − (6.75 × age in years)</p>
+<p>For women: BMR = 65.51 + (4.35 * weight in pounds) + (4.7 * height in inches) - (4.7 * age in years)</p>
+<script>
+  function calc()
+  {
+    console.log('Calculating');
+    let w = document.getElementById("weight").value;
+    let h = document.getElementById("height").value;
+    let a = document.getElementById("age").value;
+    if (document.getElementById('gender').value == "male"){
+      let answer = 66.47 + (6.24 * w) + (12.7 * h) - (6.75 * a)
+      document.getElementById("bmr").innerHTML = "Your BMR is: " + answer.toFixed(2);
+    }else if (document.getElementById('gender').value == "female"){
+      let answer = 65.51 + (4.35 * w) + (4.7 * h) - (4.7 * a)
+      document.getElementById("bmr").innerHTML = "Your BMR is: " + answer.toFixed(2);
+    }
+  }
+</script>
+ 
+  
+
+<p>Weight in lbs:<input id="weight" type="number"></p>
+<p>Height in inches:<input id="height" type="number" ></p>
+<p>Age<input id="age" type="number" ></p >
+<p>Gender<select id="gender"><option value="male">Male</option><option value="female">Female</option></select></p><br><br>
+<button id="submit" onclick="calc()">Submit</button>
+
+<h3 id="bmr">Your BMR is: </h3>
+
+
+{% endblock %}

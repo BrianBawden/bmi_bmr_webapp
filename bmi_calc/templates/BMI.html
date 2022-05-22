@@ -1,0 +1,27 @@
+
+  {% extends 'base.html' %}
+
+ 
+
+  {% block content %}
+
+  <script>
+      function calc()
+      {
+        console.log('Calculating');
+        let w = document.getElementById("weight").value;
+        let h = document.getElementById("height").value;
+        let answer = (w*703) / (h*h)
+        document.getElementById("bmi").innerHTML = "Your BMI is: " + answer.toFixed(2);
+      }
+    </script>
+ 
+  
+     <p>The Formula for BMI is: (weight in pounds x 703) / (height in inches x height in inches)</p>
+     <p>Weight in lbs:<input id="weight" type="number" min="100" max="1000"></p>
+     <p>Height in inches:<input id="height" type="number" min="100" max="1000"></p>
+     <button id="submit" onclick="calc()">Submit</button>
+     <h3 id="bmi">Your BMI is: </h3>
+
+  {% endblock %}
+

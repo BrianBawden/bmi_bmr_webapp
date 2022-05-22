@@ -1,0 +1,8 @@
+youtube video: https://www.youtube.com/watch?v=F5mRW0jo-U4&t=2151s
+time: 1:28:00
+
+youtube video: https://www.youtube.com/watch?v=vkBiEuZSq9s
+
+refrence: https://www.w3schools.com/js/default.asp
+
+tutorial: https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/lecture/4954484#content
