@@ -19,19 +19,28 @@ The first page I created was just a simple home page with links in the navigatio
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Tools used:
 
-{Describe the programming language that you used and any libraries.}
+* VScode
+* Django
+* Virtualenv
+
+Languages Used:
+
+* Python
+* HTML
+* JavaScript
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [YouTube](https://www.youtube.com/watch?v=F5mRW0jo-U4&t=2151s)
+* [YouTube](https://www.youtube.com/watch?v=vkBiEuZSq9s)
+* [Udemy](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/lecture/4954484#content)
+* [Realpython](https://realpython.com/django-setup/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Improve css styling
+* Add user login 
+* Tracking user data in database
